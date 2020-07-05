@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">UserDemoApp</string>
+    <string name="hey_there">Hey There :)</string>
+    <string name="verify_num">Verify Your Number</string>
+    <string name="enter_otp">Enter Otp</string>
+    <string name="num_text">Please your Country code </string>
+    <string name="login_with">Login with mobile</string>
+    <string name="ver_otp">Verify OTP</string>
+    <string name="num_ver_txt"><![CDATA[Please your Country code \n& Phone number for verification \n e.g  91 4356643]]></string>
+    <string name="enter_confirmation_code">Enter Digits Sent to you</string>
+    <string name="otp_hint">000000</string>
+    <string name="country_code">91</string>
+    <string name="verify">Verify Code</string>
+    <string name="record">Record</string>
+    <string name="download">Download</string>
+    <string name="upload">Upload</string>
+    <string name="vedio">Video1</string>
+    <string name="click_to_watch_video">Click to watch video</string>
+</resources>

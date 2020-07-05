@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpPage"
+    android:background="#01061f">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="otp_verif.json"
+                app:lottie_loop="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="294dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_confirmation_code"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:fontFamily="@font/catamaran_medium"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="210dp">
+
+            <com.chaos.view.PinView
+                android:id="@+id/otp_input_box"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/catamaran_medium"
+                android:hint="@string/otp_hint"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#666"
+                android:textSize="17sp"
+                app:itemCount="6"
+                app:itemHeight="40dp"
+                app:itemRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lineColor="#666"
+                app:lineWidth="0.9dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/verify_otp_number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_bg"
+                android:drawableEnd="@drawable/icons_verified_account"
+                android:fontFamily="@font/samsungsans_regular"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="@string/verify"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
